@@ -1,0 +1,17 @@
+﻿<svg xmlns='http://www.w3.org/2000/svg' width='100%' height='100%'>
+  <defs>
+    <linearGradient id='a' x1='0' x2='0' y1='0' y2='1'>
+      <!-- Degradado de rojo a dorado -->
+      <stop offset='0' stop-color='#C2050B'/> <!-- Rojo -->
+      <stop offset='1' stop-color='#CDAF1F'/> <!-- Dorado -->
+    </linearGradient>
+    <pattern id='b' width='24' height='24' patternUnits='userSpaceOnUse'>
+      <!-- Círculos blancos -->
+      <circle fill='#ffffff' cx='12' cy='12' r='12'/>
+    </pattern>
+  </defs>
+  <!-- Fondo degradado rojo a dorado -->
+  <rect width='100%' height='100%' fill='url(#a)'/>
+  <!-- Patrón de círculos con baja opacidad -->
+  <rect width='100%' height='100%' fill='url(#b)' fill-opacity='0.1'/>
+</svg>
