@@ -1,47 +1,76 @@
+import { FaBalanceScale, FaRegBuilding, FaChartLine, FaUsersCog, FaSync, FaMoneyCheck, FaGavel, FaCloud, FaCreditCard } from "react-icons/fa";
 import { HoverEffect } from "../ui/card-hover-effect";
 
 export function CardHoverEffectDemo() {
   return (
     (<div className="max-w-5xl mx-auto px-8">
-      <HoverEffect items={projects}  />
+      <HoverEffect items={projects} />
     </div>)
   );
 }
+
 export const projects = [
   {
-    title: "Stripe",
+    title: "Finanzas",
     description:
-      "A technology company that builds economic infrastructure for the internet.",
-    link: "https://stripe.com",
+      "Procesos, políticas y procedimientos en el área de tesorería y finanzas, incluyendo desarrollo de equipos de trabajo de alto rendimiento y reingeniería de procesos financieros.",
+    icon: <FaBalanceScale />,
+    link: "#",
   },
   {
-    title: "Netflix",
+    title: "Desarrollo de equipos",
     description:
-      "A streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.",
-    link: "https://netflix.com",
+      "Impulsamos equipos de trabajo de alto rendimiento, promoviendo un ambiente de cooperación y mejora continua.",
+    icon: <FaUsersCog />,
+    link: "#",
   },
   {
-    title: "Google",
+    title: "Reingeniería de procesos",
     description:
-      "A multinational technology company that specializes in Internet-related services and products.",
-    link: "https://google.com",
+      "Rediseñamos procesos clave para maximizar la eficiencia operativa y administrativa, adaptándonos a las necesidades del cliente.",
+    icon: <FaSync />,
+    link: "#",
   },
   {
-    title: "Meta",
+    title: "Planeación financiera",
     description:
-      "A technology company that focuses on building products that advance Facebook's mission of bringing the world closer together.",
-    link: "https://meta.com",
+      "Ayudamos en la planeación y proyección financiera para garantizar el manejo óptimo de recursos y presupuestos.",
+    icon: <FaChartLine />,
+    link: "#",
   },
   {
-    title: "Amazon",
+    title: "Gestión en Tesorería",
     description:
-      "A multinational technology company focusing on e-commerce, cloud computing, digital streaming, and artificial intelligence.",
-    link: "https://amazon.com",
+      "Optimización del manejo y desarrollo de actividades en Tesorería para mejorar la eficiencia en la gestión de recursos.",
+    icon: <FaMoneyCheck />,
+    link: "#",
   },
   {
-    title: "Microsoft",
+    title: "Operaciones",
     description:
-      "A multinational technology company that develops, manufactures, licenses, supports, and sells computer software, consumer electronics, personal computers, and related services.",
-    link: "https://microsoft.com",
+      "Realizamos análisis FODA y reingeniería de procesos en áreas operativas y administrativas, mejorando el rendimiento global de la empresa.",
+    icon: <FaRegBuilding />,
+    link: "#",
   },
+  {
+    title: "Asesoría legal",
+    description:
+      "Brindamos asesoría legal especializada para empresas, incluyendo gobierno corporativo y cumplimiento normativo.",
+    icon: <FaGavel />,
+    link: "#",
+  },
+  {
+    title: "Infraestructura en la nube",
+    description:
+      "Ofrecemos soluciones de infraestructura y sistemas para la nube, asegurando la mejor tecnología para tu negocio.",
+    icon: <FaCloud />,
+    link: "#",
+  },
+  {
+    title: "Asesoría para SOFOMES y FINTECH",
+    description:
+      "Consultoría especializada para instituciones financieras como SOFOMES, SOFIPOS y FINTECH, optimizando su operación.",
+    icon: <FaCreditCard />,
+    link: "#",
+  }
 ];

@@ -17,9 +17,15 @@ module.exports = {
   theme: {
     extend: {
       animation: {
+        scroll: "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
         shimmer: "shimmer 2s linear infinite",
       },
       keyframes: {
+        scroll: {
+          to: {
+            transform: "translate(calc(-50% - 0.5rem))",
+          },
+        },
         shimmer: {
           from: {
             backgroundPosition: "0 0",
@@ -37,9 +43,7 @@ module.exports = {
       },
     },
   },
-  plugins: [
-    addVariablesForColors, // Añadido el plugin para generar las variables CSS de colores
-  ],
+  plugins: [addVariablesForColors],
 };
 
 // Plugin que añade cada color de Tailwind como variable CSS global
