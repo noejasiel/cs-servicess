@@ -1,5 +1,6 @@
-import { CardSpotlight } from "@/app/components/ui/card-spotlight";
 import { InfiniteMovingCardsDemo } from "./Valores";
+import { CardSpotlight } from "../ui/card-spotlight";
+
 
 export function CardSpotlightDemo() {
     return (
