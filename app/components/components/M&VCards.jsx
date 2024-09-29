@@ -4,53 +4,62 @@ import { CardSpotlight } from "../ui/card-spotlight";
 
 export function CardSpotlightDemo() {
     return (
-        <div className="relative w-full flex justify-evenly items-center flex-col gap-10 py-20">
+        <div className="relative w-full flex justify-evenly items-center flex-col gap-10 py-20"
+        style={{
+            // backgroundImage: `url('/asd.png')`,
+            backgroundImage: `url('/bggg.png')`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            zIndex: '-1',
+            backgroundRepeat: 'no-repeat'
+        }}
+        >
 
             {/* Background Image */}
             <div
-                className="absolute  w-screen h-full "
-                style={{
-                    // backgroundImage: `url('/asd.png')`,
-                    backgroundImage: `url('/bggg.png')`,
-                    backgroundSize: 'auto',
-                    backgroundPosition: 'center',
-                    zIndex: '-1',
-                    backgroundRepeat: 'no-repeat'
-                }}
+                className="absolute  w-screen h-full"
+                
             ></div>
-            <div className=" flex justify-evenly flex-wrap w-full gap-8 pt-0" >
+            <div className="flex justify-evenly flex-wrap w-full gap-8 flex-col ">
+                <h3 className="text-3xl font-bold text-white text-center">Misión y Visión</h3>
                 {/* Card for Mission */}
-                <CardSpotlight className="h-96 w-96 relative bg-opacity-80 backdrop-blur-sm">
-                    <p className="text-xl font-bold relative z-20 mt-2 text-white">
-                        Misión
-                    </p>
-                    <div className="text-neutral-200 mt-4 relative z-20">
-                        <ul className="list-none mt-2">
-                            <li>Dar soluciones integrales, que se adapten a tus necesidades de negocio presentes y a futuro.</li>
-                            <li>Dar soluciones integrales a negocios en desarrollo de forma personalizada y especializada.</li>
-                            <li>Solucionar la vida de negocios en desarrollo, de forma ágil, personalizada e innovadora para su crecimiento.</li>
-                        </ul>
-                    </div>
-                    {/* Single Check Icon */}
-                    <CheckIcon className="absolute top-4 right-4" />
-                </CardSpotlight>
+                <div className=" flex justify-evenly flex-wrap w-full gap-8 pt-0 " >
 
-                {/* Card for Vision */}
-                <CardSpotlight className="h-96 w-96 relative bg-opacity-80 backdrop-blur-sm">
-                    <p className="text-xl font-bold relative z-20 mt-2 text-white">
-                        Visión
-                    </p>
-                    <div className="text-neutral-200 mt-4 relative z-20">
-                        <ul className="list-none mt-2">
-                            <li>Acompañar a los emprendedores del presente y futuro a conseguir sus sueños.</li>
-                            <li>Consolidarnos como un aliado estratégico para el desarrollo de nuestros clientes.</li>
-                        </ul>
-                    </div>
-                    {/* Single Check Icon */}
-                    <CheckIcon className="absolute top-4 right-4" />
-                </CardSpotlight>
+                    <CardSpotlight className="h-96 w-96 relative bg-opacity-80 backdrop-blur-sm">
+                        <p className="text-xl font-bold relative z-20 mt-2 text-white">
+                            Misión
+                        </p>
+                        <div className="text-neutral-200 mt-4 relative z-20">
+                            <ul className="list-none mt-2">
+                                <li>Dar soluciones integrales, que se adapten a tus necesidades de negocio presentes y a futuro.</li>
+                                <li>Dar soluciones integrales a negocios en desarrollo de forma personalizada y especializada.</li>
+                                <li>Solucionar la vida de negocios en desarrollo, de forma ágil, personalizada e innovadora para su crecimiento.</li>
+                            </ul>
+                        </div>
+                        {/* Single Check Icon */}
+                        <CheckIcon className="absolute top-4 right-4" />
+                    </CardSpotlight>
+
+                    {/* Card for Vision */}
+                    <CardSpotlight className="h-96 w-96 relative bg-opacity-80 backdrop-blur-sm">
+                        <p className="text-xl font-bold relative z-20 mt-2 text-white">
+                            Visión
+                        </p>
+                        <div className="text-neutral-200 mt-4 relative z-20">
+                            <ul className="list-none mt-2">
+                                <li>Acompañar a los emprendedores del presente y futuro a conseguir sus sueños.</li>
+                                <li>Consolidarnos como un aliado estratégico para el desarrollo de nuestros clientes.</li>
+                            </ul>
+                        </div>
+                        {/* Single Check Icon */}
+                        <CheckIcon className="absolute top-4 right-4" />
+                    </CardSpotlight>
+                </div>
+
             </div>
-            <div className=" w-[80%]">
+            <div className=" w-[80%] ">
+                <h3 className="text-3xl font-bold text-white text-center">Nuestros Valores</h3>
+
                 <InfiniteMovingCardsDemo />
             </div>
         </div>
