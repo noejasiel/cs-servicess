@@ -58,7 +58,7 @@ export const Hero = () => {
                             alt="Circle"
                             width={400} // Esto es requerido por Next.js, pero será sobrescrito por la clase de Tailwind.
                             height={350}
-                            className="w-[50%] h-[240px] sm:w-[60%] md:w-[80%] lg:w-[100%]"
+                            className="w-[70%] h-[240px] sm:w-[80%] md:w-[90%] lg:w-[100%]"
                         />
                     </div>
 

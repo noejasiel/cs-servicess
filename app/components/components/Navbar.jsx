@@ -19,24 +19,24 @@ export const Navbar = () => {
 
     return (
         <nav className='z-50'
-        style={{
-            backgroundColor: isScrolled ? '#00123d6e' : 'transparent',
-            backdropFilter: isOpen ? 'blur(3px)' : 'none',
-            zIndex: 100,
-        }}>
+            style={{
+                backgroundColor: isScrolled ? '#00123d6e' : 'transparent',
+                backdropFilter: isOpen ? 'blur(3px)' : 'none',
+                zIndex: 100,
+            }}>
             <div
                 className={`fixed top-0 w-full transition duration-300 z-50 backdrop-blur-lg ${isScrolled ? 'bg-[#00123d6e]/30 shadow-sm' : 'bg-transparent'
                     } ${isOpen ? 'bg-[#00123d6e]/60 backdrop-blur-3xl' : ''}`}
-                    style={{ zIndex: "100 !important" }}
+                style={{ zIndex: "100 !important" }}
             >
                 <div className="container mx-auto px-4 flex justify-between items-center">
-                <Image
-  src="/logo.png"
-  alt="Logo"
-  width={400} // Tamaño por defecto para pantallas grandes
-  height={70}
-  className="w-[200px] h-auto sm:w-[250px] sm:h-auto lg:w-[400px] lg:h-auto"
-/>
+                    <Image
+                        src="/logo.png"
+                        alt="Logo"
+                        width={400} // Tamaño por defecto para pantallas grandes
+                        height={70}
+                        className="w-[200px] h-auto sm:w-[250px] sm:h-auto lg:w-[400px] lg:h-auto"
+                    />
 
 
                     {/* Botón de hamburguesa para móviles */}
