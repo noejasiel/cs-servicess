@@ -36,7 +36,7 @@ export const Hero = () => {
                 </div>
 
                 {/* Sección "Por qué elegirnos" */}
-                <div className="flex justify-between flex-wrap w-full lg:w-auto gap-4 items-baseline ">
+                <div className="flex justify-evenly flex-wrap w-full lg:w-auto gap-1 md:gap-4 items-baseline ">
                     {/* Texto de Por qué elegirnos */}
                     <div className="flex flex-col justify-center gap-4 w-full lg:w-[50%] text-white ">
                         <div className="w-full md:w-[80%] ">
@@ -52,13 +52,13 @@ export const Hero = () => {
                     {/* Imagen con fondo de vidrio */}
                     {/* Imagen con fondo de vidrio */}
                     {/* Imagen con fondo de vidrio */}
-                    <div className="flex justify-center items-center w-[80%] md:w-auto bg-white/15 backdrop-blur-sm rounded-[66%_46%/87%_43%] md:mt-0 m-auto">
+                    <div className="flex justify-center items-center w-[80%] md:w-auto bg-white/15 backdrop-blur-sm rounded-[66%_46%/87%_43%] md:mt-0 mx-auto">
                         <Image
                             src="/NUEVO.png"
                             alt="Circle"
                             width={400} // Esto es requerido por Next.js, pero será sobrescrito por la clase de Tailwind.
                             height={350}
-                            className="w-[300px] h-[320px] sm:w-[80%] md:w-[90%] lg:w-[100%]"
+                            className="w-[300px] h-[320px] sm:w-[80%] md:w-[90%] lg:w-[100%] mb-4 md:mb-0"
                         />
                     </div>
 

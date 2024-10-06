@@ -13,18 +13,43 @@ const geistMono = localFont({
 });
 
 export const metadata = {
-  title: "CS Services",
+  title: "Consultoría de Servicios Profesionales | CS Services",
   description:
-    "Somos una consultora especializada en brindar servicios de calidad, con un equipo de profesionales altamente capacitados.",
+    "CS Services ofrece consultoría especializada en gestión de proyectos, desarrollo profesional y asesoría empresarial. Nuestro equipo de expertos se enfoca en mejorar el rendimiento y éxito de nuestros clientes.",
   image: "/logo.png",
-  // url: "https://cs-services.vercel.app",
+  url: "https://cs-services.vercel.app",
   type: "website",
-  site_name: "CS Services",
+  site_name: "Concordia Success Services",
   locale: "es_MX",
   // twitter: "@cs_services",
-  keywords: ["consultora", "servicios", "calidad", "profesionales", "capacitados"],
-
+  keywords: [
+    "consultoría empresarial",
+    "servicios profesionales",
+    "asesoría empresarial",
+    "gestión de proyectos",
+    "desarrollo profesional",
+    "consultoría en México",
+    "mejora organizacional"
+  ],
+  og: {
+    title: "Consultoría de Servicios Profesionales | CS Services",
+    description:
+      "CS Services brinda soluciones personalizadas en gestión de proyectos, desarrollo profesional y asesoría empresarial.",
+    image: "/logo.png",
+    url: "https://cs-services.vercel.app",
+    type: "website",
+    locale: "es_MX"
+  },
+  // twitter: {
+  //   card: "summary_large_image",
+  //   title: "Consultoría de Servicios Profesionales | CS Services",
+  //   description: "Soluciones empresariales para mejorar tu organización.",
+  //   image: "/logo.png",
+  //   site: "@cs_services",
+  //   url: "https://cs-services.vercel.app"
+  // },
 };
+
 
 export default function RootLayout({ children }) {
   return (
