@@ -11,7 +11,7 @@ export const Hero = () => {
     const message = "Hola, estoy interesado en tus servicios."; // Mensaje inicial
     return (
         <div
-            className=" h-screen lg:h-[100vh] pt-16 sm:pt-20 z-50"
+            className=" h-screen lg:h-[100vh] pt-8 sm:pt-20 z-50"
             style={{
                 backgroundImage: "url('bgCool.png')",
                 backgroundSize: "cover",
