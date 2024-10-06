@@ -11,7 +11,7 @@ export const Hero = () => {
     const message = "Hola, estoy interesado en tus servicios."; // Mensaje inicial
     return (
         <div
-            className="bg-purple-300 h-screen lg:h-[100vh] sm:pt-20 z-50"
+            className="bg-purple-300 h-screen lg:h-[100vh] pt-10 sm:pt-20 z-50"
             style={{
                 backgroundImage: "url('bgCool.png')",
                 backgroundSize: "cover",
@@ -36,12 +36,12 @@ export const Hero = () => {
                 </div>
 
                 {/* Sección "Por qué elegirnos" */}
-                <div className="flex justify-between flex-wrap w-full lg:w-auto mt-8 gap-4 items-baseline ">
+                <div className="flex justify-between flex-wrap w-full lg:w-auto gap-4 items-baseline ">
                     {/* Texto de Por qué elegirnos */}
                     <div className="flex flex-col justify-center gap-4 w-full lg:w-[50%] text-white ">
                         <div className="w-full md:w-[80%] ">
                             <BackgroundLines className="flex justify-center w-full flex-col px-4">
-                                <h2 className="text-white text-center text-xl md:text-2xl lg:text-4xl font-sans py-2 md:py-10 relative z-20 font-bold tracking-tight">
+                                <h2 className="text-white text-center text-lg md:text-2xl lg:text-4xl font-sans py-2 md:py-10 relative z-20 font-bold tracking-tight">
                                     ¿Por qué elegirnos?
                                 </h2>
                                 <TextGenerateEffect words={words2} timeWait={4} isMiddle={true} />
