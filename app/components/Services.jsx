@@ -5,7 +5,7 @@ import { CardHoverEffectDemo, WobbleCardDemo } from "./components/WobbleCard"
 export const Services = () => {
 
     return (
-        <div className="relative flex flex-col items-center justify-center gap-8 text-center w-full lg:w-auto">
+        <div  className="relative flex flex-col items-center justify-center gap-8 text-center w-full lg:w-auto" id="services">
             <h3 className="text-3xl sm:text-2xl md:text-4xl lg:text-5xl text-[#00123dce] font-bold pt-8">
                 Servicios
             </h3>

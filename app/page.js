@@ -5,10 +5,13 @@ import { Navbar } from "./components/components/Navbar";
 import { CardHoverEffectDemo } from "./components/components/WobbleCard";
 import { Hero } from "./components/Hero";
 import { Services } from "./components/Services";
+import { Footer } from "./components/Footer";
+import { ContactForm, SignupFormDemo } from "./components/ContactForm";
+
 
 export default function Home() {
   return (
-    <>
+    <div id="home">
       {/* <Navbar /> */}
       <Navbar />
       <Hero />
@@ -17,8 +20,9 @@ export default function Home() {
       <CardSpotlightDemo />
       <WhatsAppButton />
       <LampDemo />
-
-    </>
+      <SignupFormDemo />
+      <Footer />
+    </div>
 
   );
 }

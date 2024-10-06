@@ -5,14 +5,14 @@ import { cn } from "../lib/utils";
 
 export const TextGenerateEffect = ({
   words,
-  className,
+  className = "",
   filter = true,
   duration = 0.5,
-  timeWait = 0.2
+  timeWait = 0.2,
+  isMiddle = false,
 }) => {
   const [scope, animate] = useAnimate();
   let wordsArray = words.split(" ");
-
   useEffect(() => {
     // Retrasar la animación por el tiempo especificado en timeWait
     const timeoutId = setTimeout(() => {
@@ -39,7 +39,7 @@ export const TextGenerateEffect = ({
         {wordsArray.map((word, idx) => (
           <motion.span
             key={word + idx}
-            className="dark:text-white text-white opacity-0 text-justify"
+            className= {`dark:text-white text-white opacity-0 text-justify  ${isMiddle ? "text-sm md:text-lg" : ""}` }
             style={{
               filter: filter ? "blur(10px)" : "none",
             }}
@@ -52,7 +52,7 @@ export const TextGenerateEffect = ({
   };
 
   return (
-    <div className={cn("font-bold", className)}>
+    <div className={cn("font-bold ")}>
       <div className="mt-4">
         <div className="dark:text-white text-black text-lg leading-snug tracking-wide text-center">
           {renderWords()}

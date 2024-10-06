@@ -10,7 +10,7 @@ export function CardSpotlightDemo() {
             backgroundImage: `url('/bggg.png')`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
-            zIndex: '-1',
+            // zIndex: '-1',
             backgroundRepeat: 'no-repeat'
         }}
         >

@@ -7,9 +7,11 @@ const words2 = `  Nuestro equipo de expertos ofrece soluciones personalizadas qu
 resultados medibles y nos comprometemos con la innovación para alcanzar tus objetivos.`
 
 export const Hero = () => {
+    const phoneNumber = "5540808799"; // Reemplaza con tu número de WhatsApp
+    const message = "Hola, estoy interesado en tus servicios."; // Mensaje inicial
     return (
         <div
-            className="bg-purple-300 h-screen lg:h-[100vh] pt-20"
+            className="bg-purple-300 h-screen lg:h-[100vh] pt-20 z-50"
             style={{
                 backgroundImage: "url('bgCool.png')",
                 backgroundSize: "cover",
@@ -17,7 +19,7 @@ export const Hero = () => {
                 width: "100%",
             }}
         >
-            <div className="flex items-start pt-[2rem] md:pt-16 justify-center h-full w-[90%] m-auto flex-wrap">
+            <div className="flex items-startm pt-[2rem] md:pt-16 justify-center h-full w-[90%] m-auto flex-wrap">
                 {/* Contenido principal */}
                 <div className="flex flex-col items-center justify-center gap-4 text-center w-full lg:w-auto">
                     <h1 className="text-3xl sm:text-2xl md:text-4xl lg:text-5xl text-white font-bold">
@@ -26,20 +28,23 @@ export const Hero = () => {
                     <TextGenerateEffect words={words} />
                     {/* Botón con borde animado */}
                     <button className="px-6 py-3 bg-white text-gray-900 font-semibold rounded-lg hover:bg-gray-200 transition z-40">
-                        Contáctanos
+                        <a href={`https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`} target="_blank" rel="noopener noreferrer">
+
+                            Contáctanos
+                        </a>
                     </button>
                 </div>
 
                 {/* Sección "Por qué elegirnos" */}
-                <div className="flex justify-between flex-wrap w-full lg:w-auto mt-8 gap-4">
+                <div className="flex justify-between flex-wrap w-full lg:w-auto mt-8 gap-4 items-baseline ">
                     {/* Texto de Por qué elegirnos */}
-                    <div className="flex flex-col justify-center gap-4 w-full lg:w-[50%] text-white">
-                        <div className="w-full md:w-[80%] m-auto">
-                            <BackgroundLines className="flex items-center justify-center w-full flex-col px-4">
+                    <div className="flex flex-col justify-center gap-4 w-full lg:w-[50%] text-white ">
+                        <div className="w-full md:w-[80%] ">
+                            <BackgroundLines className="flex justify-center w-full flex-col px-4">
                                 <h2 className="text-white text-center text-xl md:text-2xl lg:text-4xl font-sans py-2 md:py-10 relative z-20 font-bold tracking-tight">
                                     ¿Por qué elegirnos?
                                 </h2>
-                                <TextGenerateEffect words={words2} timeWait={3} />
+                                <TextGenerateEffect words={words2} timeWait={4} isMiddle={true} />
                             </BackgroundLines>
                         </div>
                     </div>
@@ -47,9 +52,9 @@ export const Hero = () => {
                     {/* Imagen con fondo de vidrio */}
                     <div className="flex justify-center items-center w-[80%] md:w-auto bg-white/15 backdrop-blur-sm rounded-[66%_46%/87%_43%] md:mt-0 m-auto">
                         <Image
-                            src="/gran.png"
+                            src="/NUEVO.png"
                             alt="Circle"
-                            width={350}
+                            width={400}
                             height={350}
                         />
                     </div>

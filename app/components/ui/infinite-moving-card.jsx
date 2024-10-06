@@ -70,20 +70,26 @@ export const InfiniteMovingCards = ({
         )}>
         {items.map((item, idx) => (
           <li
-          className="w-[350px] max-w-full relative rounded-2xl border border-b-0 flex-shrink-0 border-slate-700 px-8 py-6 md:w-[450px] flex flex-col justify-between bg-gradient-to-b from-[#001e50] to-[#031646]"            style={{
+            className="w-[350px] max-w-full relative rounded-2xl border border-b-0 flex-shrink-0 border-slate-700 px-8 py-6 md:w-[450px] flex flex-col justify-between bg-gradient-to-b from-[#001e50] to-[#031646]" style={{
               // background: "linear-gradient(180deg, #001e50, #031646) !important",
               // backgroundColor: "linear-gradient(180deg, #001e50, #031646) !important",
               minHeight: '250px', // Establece una altura mínima para que las tarjetas tengan consistencia
             }}
             key={item.name}>
-            <blockquote className="flex-grow">
+            <blockquote className="flex-grow relative">
               <div
                 aria-hidden="true"
                 className="user-select-none -z-1 pointer-events-none absolute -left-0.5 -top-0.5 h-[calc(100%_+_4px)] w-[calc(100%_+_4px)]"></div>
-              <span className="relative z-20 text-xl leading-[1.6] text-gray-100 font-normal">
+              <span className="relative z-20 text-xl leading-[1.6] text-gray-100 font-normal flex flex-col items-center">
+                <img
+                  src={item.image}
+                  alt={item.name}
+                  className="rounded-full h-24 w-24 object-cover mb-4"
+                />
                 {item.quote}
               </span>
             </blockquote>
+
             <div className="relative z-20 mt-6 flex flex-row items-center">
               <div className="text-3xl text-gray-400 mr-4">
                 {/* Aquí renderiza el ícono que corresponde a cada valor */}
