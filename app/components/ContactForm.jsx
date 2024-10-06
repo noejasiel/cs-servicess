@@ -28,9 +28,9 @@ export function SignupFormDemo({ msg = "" }) {
 
         // const data = await response.json();
 
-        const data = await fetch('http://localhost:3000/api/sendEmail' )
+        // const data = await fetch('http://localhost:3000/api/sendEmail' )
         // debugger
-        console.log(data, "ACA AMNDPDOOD")
+        // console.log(data, "ACA AMNDPDOOD")
     };
     const handleSubmit = (e) => {
         e.preventDefault();
