@@ -11,7 +11,7 @@ export const Hero = () => {
     const message = "Hola, estoy interesado en tus servicios."; // Mensaje inicial
     return (
         <div
-            className="bg-purple-300 h-screen lg:h-[100vh] pt-16 sm:pt-20 z-50"
+            className=" h-screen lg:h-[100vh] pt-16 sm:pt-20 z-50"
             style={{
                 backgroundImage: "url('bgCool.png')",
                 backgroundSize: "cover",
@@ -41,7 +41,7 @@ export const Hero = () => {
                     <div className="flex flex-col justify-center gap-4 w-full lg:w-[50%] text-white ">
                         <div className="w-full md:w-[80%] ">
                             <BackgroundLines className="flex justify-center w-full flex-col px-4">
-                                <h2 className="text-white text-center text-lg md:text-2xl lg:text-4xl font-sans py-2 md:py-10 relative z-20 font-bold tracking-tight">
+                                <h2 className="text-white text-center text-lg md:text-2xl lg:text-4xl font-sans  md:py-10 relative z-20 font-bold tracking-tight">
                                     ¿Por qué elegirnos?
                                 </h2>
                                 <TextGenerateEffect words={words2} timeWait={4} isMiddle={true} />
@@ -50,14 +50,19 @@ export const Hero = () => {
                     </div>
 
                     {/* Imagen con fondo de vidrio */}
+                    {/* Imagen con fondo de vidrio */}
+                    {/* Imagen con fondo de vidrio */}
                     <div className="flex justify-center items-center w-[80%] md:w-auto bg-white/15 backdrop-blur-sm rounded-[66%_46%/87%_43%] md:mt-0 m-auto">
                         <Image
                             src="/NUEVO.png"
                             alt="Circle"
-                            width={400}
+                            width={400} // Esto es requerido por Next.js, pero será sobrescrito por la clase de Tailwind.
                             height={350}
+                            className="w-[50%] h-[240px] sm:w-[60%] md:w-[80%] lg:w-[100%]"
                         />
                     </div>
+
+
                 </div>
             </div>
         </div>
