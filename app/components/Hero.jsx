@@ -3,8 +3,8 @@ import { TextGenerateEffect } from './ui/text-generate-effect';
 import { BackgroundLines } from './ui/background-lines';
 
 const words = ` Nos especializamos en brindar servicios de calidad, con un equipo de profesionales altamente capacitados.`
-const words2 = `  Nuestro equipo de expertos ofrece soluciones personalizadas que maximizan el rendimiento de tu negocio. Garantizamos 
-resultados medibles y nos comprometemos con la innovación para alcanzar tus objetivos.`
+const words2 = `Equipo especializado en asesoramiento y desarrollo de proyectos 
+empresariales con resultados garantizados.  ATENCION ESPECIAL A FINTEC Y SOFOMES`
 
 export const Hero = () => {
     const phoneNumber = "5540808799"; // Reemplaza con tu número de WhatsApp
@@ -23,9 +23,9 @@ export const Hero = () => {
                 {/* Contenido principal */}
                 <div className="flex flex-col items-center justify-center gap-4 text-center w-full lg:w-auto">
                     <h1 className="text-3xl sm:text-2xl md:text-4xl lg:text-5xl text-white font-bold">
-                        La consultora ideal para ti
+                    Consultora Empresarial y de Servicios Internacional
                     </h1>
-                    <TextGenerateEffect words={words} />
+                    {/* <TextGenerateEffect words={words} /> */}
                     {/* Botón con borde animado */}
                     <button className="px-6 py-3 bg-white text-gray-900 font-semibold rounded-lg hover:bg-gray-200 transition z-40">
                         <a href={`https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`} target="_blank" rel="noopener noreferrer">
@@ -36,15 +36,15 @@ export const Hero = () => {
                 </div>
 
                 {/* Sección "Por qué elegirnos" */}
-                <div className="flex justify-evenly flex-wrap w-full lg:w-auto gap-1 md:gap-4 items-baseline ">
+                <div className="flex justify-evenly flex-wrap w-full lg:w-auto gap-1 md:gap-4 items-center ">
                     {/* Texto de Por qué elegirnos */}
                     <div className="flex flex-col justify-center gap-4 w-full lg:w-[50%] text-white ">
-                        <div className="w-full md:w-[80%] ">
+                        <div className="w-full md:w-[80%]  md:m-auto">
                             <BackgroundLines className="flex justify-center w-full flex-col px-4">
-                                <h2 className="text-white text-center text-lg md:text-2xl lg:text-4xl font-sans  md:py-10 relative z-20 font-bold tracking-tight">
+                                <h2 className="text-white text-center text-xl md:text-2xl lg:text-4xl font-sans  md:py-10 relative z-20 font-bold tracking-tight">
                                     ¿Por qué elegirnos?
                                 </h2>
-                                <TextGenerateEffect words={words2} timeWait={4} isMiddle={true} />
+                                <TextGenerateEffect words={words2}  isMiddle={true} />
                             </BackgroundLines>
                         </div>
                     </div>
@@ -58,7 +58,7 @@ export const Hero = () => {
                             alt="Circle"
                             width={400} // Esto es requerido por Next.js, pero será sobrescrito por la clase de Tailwind.
                             height={350}
-                            className="w-[300px] h-[320px] sm:w-[80%] md:w-[90%] lg:w-[100%] mb-4 md:mb-0"
+                            className="w-[300px] lg:h-[450px] sm:w-[80%] md:w-[90%] lg:w-[100%] mb-4 md:mb-0"
                         />
                     </div>
 

@@ -11,7 +11,7 @@ export const BackgroundLines = ({
   return (
     (<div
       className={cn(" w-full bg-transparent text-white", className)}>
-      <SVG svgOptions={svgOptions} />
+      {/* <SVG svgOptions={svgOptions} /> */}
       {children}
     </div>)
   );

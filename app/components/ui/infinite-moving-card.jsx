@@ -3,6 +3,7 @@
 import { cn } from "../lib/utils";
 import React, { useEffect, useState } from "react";
 import { FaRegHandshake, FaLightbulb, FaHandsHelping, FaRocket, FaStar, FaAward, FaUserCheck, FaBalanceScale } from "react-icons/fa"; // Importamos los íconos
+import { FaUser } from 'react-icons/fa';
 
 export const InfiniteMovingCards = ({
   items,
@@ -81,11 +82,11 @@ export const InfiniteMovingCards = ({
                 aria-hidden="true"
                 className="user-select-none -z-1 pointer-events-none absolute -left-0.5 -top-0.5 h-[calc(100%_+_4px)] w-[calc(100%_+_4px)]"></div>
               <span className="relative z-20 text-xl leading-[1.6] text-gray-100 font-normal flex flex-col items-center">
-                <img
+                {/* <img
                   src={item.image}
                   alt={item.name}
                   className="rounded-full h-24 w-24 object-cover mb-4"
-                />
+                /> */}
                 {item.quote}
               </span>
             </blockquote>
@@ -93,7 +94,7 @@ export const InfiniteMovingCards = ({
             <div className="relative z-20 mt-6 flex flex-row items-center">
               <div className="text-3xl text-gray-400 mr-4">
                 {/* Aquí renderiza el ícono que corresponde a cada valor */}
-                {item.icon}
+                <FaUser />
               </div>
               <span className="flex flex-col gap-1">
                 <span className="text-xl leading-[1.6] text-gray-400 font-normal">

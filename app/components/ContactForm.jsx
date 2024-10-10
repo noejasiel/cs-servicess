@@ -54,6 +54,11 @@ export function SignupFormDemo({ msg = "" }) {
                 </LabelInputContainer>
 
                 <LabelInputContainer className="mb-4">
+                    <Label htmlFor="textMsg" className="text-[#00123dce] font-bold text-xl">  Número </Label>
+                    <Input id="phone" placeholder="5540808799" type="number" />
+                </LabelInputContainer>
+
+                <LabelInputContainer className="mb-4">
                     <Label htmlFor="textMsg" className="text-[#00123dce] font-bold text-xl"> ¿Qué necesitas? </Label>
                     <Input
                         id="textMsg"

@@ -102,6 +102,11 @@ export const Navbar = () => {
                             </a>
                         </li>
                         <li>
+                            <a href="#we" className="text-white hover:text-gray-300">
+                                Nosotros
+                            </a>
+                        </li>
+                        <li>
                             <a href="#contact" className="text-white hover:text-gray-300">
                                 Contacto
                             </a>

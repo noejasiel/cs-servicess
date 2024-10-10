@@ -4,7 +4,7 @@ import { CardSpotlight } from "../ui/card-spotlight";
 
 export function CardSpotlightDemo() {
     return (
-        <div className="relative w-full flex justify-evenly items-center flex-col gap-10 py-20"
+        <div className="relative w-full flex justify-evenly items-center flex-col gap-10 py-20" id="we"
         style={{
             // backgroundImage: `url('/asd.png')`,
             backgroundImage: `url('/bggg.png')`,
@@ -54,11 +54,28 @@ export function CardSpotlightDemo() {
                         {/* Single Check Icon */}
                         <CheckIcon className="absolute top-4 right-4" />
                     </CardSpotlight>
+
+                    <CardSpotlight className="h-96 w-96 relative bg-opacity-80 backdrop-blur-sm">
+                        <p className="text-xl font-bold relative z-20 mt-2 text-white">
+                            Valores
+                        </p>
+                        <div className="text-neutral-200 mt-4 relative z-20">
+                            <ul className="list-none mt-2">
+                                <li className="text-white">Nos guiamos por la integridad, honestidad,
+                                     pasión y calidad. Innovamos con proactividad, resolvemos en crisis 
+                                     y fomentamos relaciones de lealtad a
+                                     largo plazo, siempre brindando soluciones éticas y confiables a nuestros clientes.</li>
+                            </ul>
+                        </div>
+                        {/* Single Check Icon */}
+                        <CheckIcon className="absolute top-4 right-4" />
+                    </CardSpotlight>
+
                 </div>
 
             </div>
             <div className=" w-[80%] ">
-                <h3 className="text-3xl font-bold text-white text-center">Nuestros Valores</h3>
+                <h3 className="text-3xl font-bold text-white text-center">Reseñas</h3>
 
                 <InfiniteMovingCardsDemo />
             </div>
@@ -86,3 +103,48 @@ const CheckIcon = ({ className }) => {
         </svg>
     );
 };
+
+
+const valores = [
+    {
+      quote: "Soluciones adecuadas y éticas siempre.",
+      name: "Integridad",
+      title: "",
+    },
+    {
+      quote: "Relaciones basadas en respeto y confianza.",
+      name: "Honestidad",
+      title: "",
+    },
+    {
+      quote: "Nos motiva alcanzar tus metas.",
+      name: "Pasión",
+      title: "",
+    },
+    {
+      quote: "Agilidad y seguridad para el cliente.",
+      name: "Calidad",
+      title: "",
+    },
+    {
+      quote: "Te apoyamos en tiempos difíciles.",
+      name: "Resolución",
+      title: "",
+    },
+    {
+      quote: "Tecnología que nos diferencia.",
+      name: "Innovación",
+      title: "",
+    },
+    {
+      quote: "Iniciativa para tus necesidades.",
+      name: "Proactividad",
+      title: "",
+    },
+    {
+      quote: "Compromiso a largo plazo contigo.",
+      name: "Lealtad",
+      title: "",
+    },
+  ];
+  
