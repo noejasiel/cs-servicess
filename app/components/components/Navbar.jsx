@@ -36,12 +36,13 @@ export const Navbar = () => {
             style={{
                 backgroundColor: isScrolled ? '#00123d6e' : 'transparent',
                 // backdropFilter: isOpen ? 'blur(3px)' : 'none',
+                background: isOpen ? '#06123d' : 'transparent',
                 zIndex: 100,
                 position: 'relative',
             }}>
             <div
                 className={`fixed top-0 w-full transition duration-300 z-50 backdrop-blur-lg ${isScrolled ? 'bg-[#00123d6e]/30 shadow-sm' : 'bg-transparent'
-                    } ${isOpen ? 'bg-[#00123d6e]/60 backdrop-blur-3xl' : ''}`}
+                    } ${isOpen ? 'bg-[#06123d] ' : ''}`}
                 style={{ zIndex: "100 !important" }}
             >
                 <div className="container mx-auto px-4 flex justify-between items-center">
