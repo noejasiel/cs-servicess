@@ -151,7 +151,7 @@ export const Navbar = () => {
                     alt="Logo"
                     width={400} // Tamaño por defecto para pantallas grandes
                     height={70}
-                    className="w-[200px] h-auto sm:w-[250px] sm:h-auto lg:w-[400px] lg:h-auto"
+                    className="w-[200px] h-auto sm:w-[250px] sm:h-auto lg:w-[400px] lg:h-auto mb-16"
                 />
             </div>)}
         </nav>
