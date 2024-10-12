@@ -4,7 +4,7 @@ import { BackgroundLines } from './ui/background-lines';
 
 const words = ` Nos especializamos en brindar servicios de calidad, con un equipo de profesionales altamente capacitados.`
 const words2 = `Equipo especializado en asesoría y desarrollo de proyectos empresariales con resultados
- garantizados. Atención especial a FINTECH y SOFOMES.`
+ garantizados. ATENCIÓN ESPECIAL A FINTECH Y SOFOMES.`
 
 export const Hero = () => {
     const phoneNumber = "5540808799"; // Reemplaza con tu número de WhatsApp
