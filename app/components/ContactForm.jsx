@@ -30,7 +30,7 @@ export function SignupFormDemo({ msg = "" }) {
     const sendEmail = async () => {
         try {
             setIsLoading(true);  // Mostrar el loader
-            const response = await fetch('http://localhost:4000/send-email', {
+            const response = await fetch('https://server-sfka.onrender.com/send-email', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
